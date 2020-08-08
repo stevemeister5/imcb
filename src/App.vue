@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app-bar app id="inspire">
     <v-navigation-drawer
       fixed
       v-model="drawer"
@@ -24,21 +24,21 @@
         </router-link>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="indigo" dark fixed app>
+    <v-toolbar color="indigo" dark fixed>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Home</v-toolbar-title>
     </v-toolbar>
-    <v-content>
+    <v-main>
       <v-container fluid>
         <div id="app">
           <router-view />
         </div>
       </v-container>
-    </v-content>
+    </v-main>
     <v-footer color="indigo" app>
       <span class="white--text">&copy; 2020</span>
     </v-footer>
-  </v-app>
+  </v-app-bar>
 </template>
 
 <script>
