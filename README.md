@@ -1,4 +1,4 @@
-# imcb
+# imcb [NOTE DEVELOPMENT HELL DO NOT APPROACH]
 
 > An app for users to rate movies
 
